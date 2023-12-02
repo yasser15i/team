@@ -1,0 +1,38 @@
+
+.list {
+   display: none;
+  border: 1px solid brown;
+   padding: 15px;
+   }
+    
+   .list-toggle {
+     cursor: pointer;
+  color: rgb(123, 161, 193);
+    text-decoration: underline;
+     }
+    
+    
+    
+     h1 {
+ color: rgb(3, 0, 41);
+     }
+    
+    body {
+    background-color: rgb(223, 234, 249);
+     }
+   
+     body {
+        font-family: Arial, sans-serif;
+        }
+       h1 {
+        color: #333333;
+        margin-bottom: 20px;
+        }
+        ul {
+        list-style-type: none;
+        padding: 0;
+        }
+        li {
+       margin-bottom: 10px;
+        font-size: 18px;
+        }

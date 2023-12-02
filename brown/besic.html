@@ -1,0 +1,118 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="sstyles.css">
+
+
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <p>
+          <strong>رؤية الجامعة 
+          </strong>
+           جامعة متميزة إقليمياً بمخرجاتها التعليمية، وأبحاثها الابتكارية، وخدماتها المجتمعية
+        </p>
+      </div>
+      <div class="swiper-slide">
+        <p>
+          <strong>      رسالة الجامعة
+
+          </strong>
+          نعلّم ونبحث ونبتكر لنساهم في بناء مجتمع حيوي
+
+        </p>
+      </div>
+      <div class="swiper-slide">
+        <p>
+          <strong>      
+            قيم الجامعة
+          </strong>
+          المواطنة: الاعتزاز بالهوية الوطنية واستشعار المسؤولية الاجتماعية. 
+          الانتماء: شعور الالتزام والمبادرة نحو أهداف وغايات الجامعة. <br>المسؤولية: الالتزام بالمعايير الأخلاقية وقيم العمل. <br>التميز: التطبيق للممارسات المعيارية وتقديم الخدمات النوعية. بناء<br> القدرات: الاستثمار في رأس المال البشري. <br>العمل الجماعي: تكريس مبدأ التعاون والعمل بروح الفريق الواحد<br>
+        </p>
+      </div>
+    </div>
+   
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    <div class="autoplay-progress">
+      <svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="column">
+    
+    <div class="row">
+      
+      <!-- المحتوى الصف الأول -->
+      <img src="left-image.jpg" alt="image " , height="25%", width="25%">
+      <p>
+<strong>        كلمة العميد
+</strong>
+ <br>
+تسعى عمادة شؤون الطلاب بجامعة جازان لترجمة شعار الجامعة (الطالب أولاً) إلى واقع ملموس , من خلال خدماتها وبرامجها التي تقدمها لطلبة الجامعة , كما وتسعى  العمادة لتقديم خدمات و أنشطة وبرامج شاملة تستوعب جميع مستويات واتجاهات الطلبة تتمتع بالمصداقية والجودة, و تتفق مع توجهات مملكتنا الحبيبة الحاضرة والمستقبلية لرؤية المملكة(2030) التي تراعي ميول واهتمامات الطلبة ، وتلبي احتياجاتهم.
+ إن خدمة الطلاب شرف عزيز نتشرف بأن كلفنا به ونسأل المولى عز وجل  أن يوفقنا في إتقانه والوفاء بمتطلباته والتزاماته, وسنسعى جاهدين مع فريق العمل بالعمادة  لتقديم خدمات وبرامج نوعية متجددة مستمرة تشبع اهتمامات وميول واحتياجات الطلاب , وتحقق تطلعات قيادتنا الرشيدة وتدعم اللحمة الوطنية من خلال خدمات وبرامج أُشرِك الطلاب فى تخطيطها وتنفيذها وتقويمها , وسيظل العمل الجماعي التكاملي هو ديدننا فى عمادة شؤون الطلاب .
+أبنائي وبناتي طلاب وطالبات جامعة جازان , لقد شرفني الله وفريق العمل بالعمادة  بأن نكون  معكم ، و بأذن الله سنكون  داعمين لكم من أجل  أن نرقى  سوياً بجامعتنا  إلى مصاف التميز والعالمية .
+عميد شؤون الطلاب
+<br>
+<b>د.يحيى بن علي فقيهي
+</b>
+      </p>
+      
+      <img class="logo" src="jazanu_logo_1.jpg" alt="logo" width="10%" , height="10%" >
+    </div>
+        <h2>هيكلة الجامعة </h2>
+        <img src="rigt-image.jpg" alt="image">
+   
+
+  
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

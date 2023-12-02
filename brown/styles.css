@@ -1,0 +1,476 @@
+
+header {
+    background-color: #8995c2;
+    color: #fff;
+    padding: 6px;
+}
+
+
+*{
+    margin: 0;
+    padding:0;
+    
+}
+
+body{
+    
+    background: linear-gradient(#c9d0e2,#c9d0e2);
+    height: 70vh;
+    font-family: System-ui;
+    
+    
+}
+a {
+    text-decoration: none;
+    color: #e9e9f4;
+    
+    
+}
+
+  header{
+      
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px;
+}
+header{
+    font-size:19px;
+    text-transform: uppercase;
+    
+    
+}
+  header ul{
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+        
+     
+ }
+  header ul li{
+    margin-right: 30px;
+    
+    
+    
+}
+  header ul li a{
+      padding: 6px 8px;
+      border-radius: 10px;
+      
+      
+  }
+  header ul li a:hover, .active{
+      background: #ffffff;
+      color:#f5f5f5
+      
+      
+      
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+ul li {
+    position: relative;
+    margin-right: 2px;
+}
+
+ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+ul li:hover > ul {
+    display: block;
+}
+
+ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 200px;
+}
+
+/* Add some styles to the links in the dropdown */
+ul ul a {
+    padding: 10px;
+    color: #000000;
+}
+
+ul ul ul a {
+    padding-left: 30px;
+}
+
+/* Hover effect for links in the dropdown */
+ul ul li:hover > a {
+    background-color: #6576a0;
+}
+
+
+  
+  img#logo {
+    width: 70px;
+    margin-top: 8px;
+    position: relative;
+   
+    left: 1350px;
+}
+#slogan {
+    padding-top: 0;
+    font-weight: 100;
+    color: #333;
+    padding-right: 8px;
+    margin-bottom: 20px;
+}
+#slogan .ar {
+    font-family: midan-reg,Arial;
+    font-size: 40px;
+}
+#slogan .en {
+    font-family: myriad-reg,Arial;
+    font-size: 23.5px;
+}
+.navbar.marginBottom-0 {
+    margin-bottom: 0;
+}
+.navbar {
+    min-height: initial;
+    border: 0 solid transparent;
+}
+#navbar-collapse-1 .navbar-nav {
+    float: none;
+    padding-right: 0;
+    text-align: center;
+    line-height: 9px;
+    margin-bottom: 4px;
+}
+#navbar-collapse-1>ul>li {
+    font-size: 1.45rem;
+}
+.navbar-nav>li {
+    float: none;
+    display: inline-block;
+}
+#navbar-collapse-1>ul>li>a {
+    color: #6f6f6f;
+}
+
+li#homeIcon a {
+    top: 3px;
+}
+#homeIcon a {
+    font-family: FontAwesome;
+    font-size: 25px;
+}
+#navbar-collapse-1 .dropdown ul.dropdown-menu {
+    display: none;
+}
+.nav>li>a {
+    display: inline-block;
+    padding: 0;
+    line-height: 1.1;
+}
+/* من أجل العلامة الفاصلة بين كل عنصر */
+#navbar-collapse-1>ul>li:after {
+    content: "|";
+    color: #999;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+img#log {
+    width: 70px;
+    margin-top: 8px;
+position: relative;
+top: 730px;
+left: 1050px;
+}
+#slogan {
+    padding-top: 0;
+    font-weight: 100;
+    color: #333;
+    padding-right: 8px;
+    margin-bottom: 20px;
+}
+#slogan .ar {
+    font-family: midan-reg,Arial;
+    font-size: 40px;
+}
+#slogan .en {
+    font-family: myriad-reg,Arial;
+    font-size: 23.5px;
+}
+.navbar.marginBottom-0 {
+    margin-bottom: 0;
+}
+.navbar {
+    min-height: initial;
+    border: 0 solid transparent;
+}
+#navbar-collapse-1 .navbar-nav {
+    float: none;
+    padding-right: 0;
+    text-align: center;
+    line-height: 9px;
+    margin-bottom: 4px;
+}
+#navbar-collapse-1>ul>li {
+    font-size: 1.45rem;
+}
+.navbar-nav>li {
+    float: none;
+    display: inline-block;
+}
+#navbar-collapse-1>ul>li>a {
+    color: #6f6f6f;
+}
+
+li#homeIcon a {
+    top: 3px;
+}
+#homeIcon a {
+    font-family: FontAwesome;
+    font-size: 25px;
+}
+#navbar-collapse-1 .dropdown ul.dropdown-menu {
+    display: none;
+}
+.nav>li>a {
+    display: inline-block;
+    padding: 0;
+    line-height: 1.1;
+}
+/* من أجل العلامة الفاصلة بين كل عنصر */
+#navbar-collapse-1>ul>li:after {
+    content: "|";
+    color: #999;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+img#lgo {
+    width: 150px;
+    margin-top: 8px;
+    position: relative;
+   
+    left: 1100px;
+}
+#slogan {
+    padding-top: 0;
+    font-weight: 100;
+    color: #333;
+    padding-right: 8px;
+    margin-bottom: 20px;
+}
+#slogan .ar {
+    font-family: midan-reg,Arial;
+    font-size: 40px;
+}
+#slogan .en {
+    font-family: myriad-reg,Arial;
+    font-size: 23.5px;
+}
+.navbar.marginBottom-0 {
+    margin-bottom: 0;
+}
+.navbar {
+    min-height: initial;
+    border: 0 solid transparent;
+}
+#navbar-collapse-1 .navbar-nav {
+    float: none;
+    padding-right: 0;
+    text-align: center;
+    line-height: 9px;
+    margin-bottom: 4px;
+}
+#navbar-collapse-1>ul>li {
+    font-size: 1.45rem;
+}
+.navbar-nav>li {
+    float: none;
+    display: inline-block;
+}
+#navbar-collapse-1>ul>li>a {
+    color: #6f6f6f;
+}
+
+li#homeIcon a {
+    top: 3px;
+}
+#homeIcon a {
+    font-family: FontAwesome;
+    font-size: 25px;
+}
+#navbar-collapse-1 .dropdown ul.dropdown-menu {
+    display: none;
+}
+.nav>li>a {
+    display: inline-block;
+    padding: 0;
+    line-height: 1.1;
+}
+/* من أجل العلامة الفاصلة بين كل عنصر */
+#navbar-collapse-1>ul>li:after {
+    content: "|";
+    color: #999;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+img#loog{
+    width: 90px;
+    margin-top: 8px;
+}
+#slogan {
+    padding-top: 0;
+    font-weight: 100;
+    color: #333;
+    padding-right: 8px;
+    margin-bottom: 20px;
+}
+#slogan .ar {
+    font-family: midan-reg,Arial;
+    font-size: 40px;
+}
+#slogan .en {
+    font-family: myriad-reg,Arial;
+    font-size: 23.5px;
+}
+.navbar.marginBottom-0 {
+    margin-bottom: 0;
+}
+.navbar {
+    min-height: initial;
+    border: 0 solid transparent;
+}
+#navbar-collapse-1 .navbar-nav {
+    float: none;
+    padding-right: 0;
+    text-align: center;
+    line-height: 9px;
+    margin-bottom: 4px;
+}
+#navbar-collapse-1>ul>li {
+    font-size: 1.45rem;
+}
+.navbar-nav>li {
+    float: none;
+    display: inline-block;
+}
+#navbar-collapse-1>ul>li>a {
+    color: #870d0d;
+}
+
+li#homeIcon a {
+    top: 3px;
+}
+#homeIcon a {
+    font-family: FontAwesome;
+    font-size: 25px;
+}
+#navbar-collapse-1 .dropdown ul.dropdown-menu {
+    display: none;
+}
+.nav>li>a {
+    display: inline-block;
+    padding: 0;
+    line-height: 1.1;
+}
+/* من أجل العلامة الفاصلة بين كل عنصر */
+#navbar-collapse-1>ul>li:after {
+    content: "|";
+    color: #7c7b84;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+.counter-container {
+
+    display: flex;
+    height: 100px;
+    background-color: #0c003d;
+    box-shadow: 0px -3px 1px rgb(255, 255, 255); 
+    position: fixed;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+
+  }
+
+
+  .counter {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #fffdfd;
+    text-align: center;
+    margin: 0 15px;
+    position: relative;
+  }
+
+  .counter span {
+    display: block;
+  }
+
+  .counter span:first-child {
+    font-size:15px;
+    font-weight: bold;
+    animation: countAnimation 1s ease-out infinite;
+  }
+
+  .counter span:last-child {
+    font-size: 15px;
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-out infinite;
+  }
+
+  .counter span:last-child.animation-complete {
+    animation: none;
+    opacity: 1;
+  }
+  .counter img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+  
+}
+
+video {
+    width: 25%;
+    height: 25%;
+    height: auto;
+    position: absolute;
+    top: 250px; /* يمكنك تعديل هذه القيمة لتحديد المسافة من الأعلى */
+    right: 200px; 
+
+}

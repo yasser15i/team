@@ -1,0 +1,470 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="bb.css" />
+  <style>
+ body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#c0c9e2,#c8d8e1);
+    height: 70vh;
+    font-family: System-ui;
+   
+    
+}
+
+header{
+  background-color: #8995c2;
+    color: #fff;
+    padding: 6px; 
+}
+a {
+    text-decoration: none;
+    color: #e9e9f4;
+    
+    
+}
+
+  header{
+      
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px;
+}
+header{
+    font-size:19px;
+    text-transform: uppercase;
+    
+    
+}
+  header ul{
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+        
+     
+ }
+  header ul li{
+    margin-right: 30px;
+    
+    
+    
+}
+  header ul li a{
+      padding: 6px 8px;
+      border-radius: 10px;
+      
+      
+  }
+  header ul li a:hover, .active{
+      background: #ffffff;
+      color:#f5f5f5
+      
+      
+      
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+ul li {
+    position: relative;
+    margin-right: 2px;
+}
+
+ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+ul li:hover > ul {
+    display: block;
+}
+
+ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 200px;
+}
+
+/* Add some styles to the links in the dropdown */
+ul ul a {
+    padding: 10px;
+    color: #000000;
+}
+
+ul ul ul a {
+    padding-left: 30px;
+}
+
+/* Hover effect for links in the dropdown */
+ul ul li:hover > a {
+    background-color: #6576a0;
+}
+    .book {
+      width: 700px;
+      height: 680px;
+      margin: 100px auto;
+      position: relative;
+      perspective: 1000px;
+      align-items: center;
+      overflow: hidden; /* إضافة خاصية لإخفاء الصفحة الزائدة */
+      border: 2px solid rgb(21, 66, 81);
+      padding: 20px;
+    }
+
+    .page {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(42, 147, 165);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.5s;
+      transform-style: preserve-3d;
+      text-align: right; /* تحديد اتجاه الكتابة إلى اليمين */
+    }
+
+    .page.left {
+      transform-origin: left center;
+      transform: rotateY(-180deg);
+    }
+
+    .page.right {
+      transform-origin: right center;
+      background-color: rgb(33, 78, 98);
+      
+    }
+
+    .page-content {
+      padding: 40px;
+      box-sizing: border-box;
+    }
+    .page.right h2{
+      font-size: 80px;
+     text-align: center;
+      font-family: "Courier New", Courier, monospace;
+    color: rgb(126, 98, 64);
+     text-align: rgb(165, 73, 42);
+     display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+      
+    }
+    .page.right img{
+      text-align: center;
+    }
+    p{
+    font-size: 30px;
+    text-align: center;
+    color: rgb((106, 102, 102), 0, 0);
+    
+     }
+  h1{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: rgb(240, 240, 118);
+  }
+  h2{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(38, 65, 71);
+    
+  }
+  h3{
+    font-size: 20px;
+    color: rgb(255, 225, 0);
+    direction: rtl;
+    size: 20px;
+  }
+  h4{
+    font-size: 20px;
+    text-align: right;
+  }
+
+h6{
+  text-align: center;
+  color: blanchedalmond;
+  font-size: 40px;
+}
+.center-img{
+  text-align: center;
+}
+.center-link{
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  color: #8995c2;
+  transition: color 0.2s ease;
+}
+
+  </style>
+  </style>
+</head>
+  <a href="styles.css" target="_self">
+    <img id="logo" class="pull-left" src="yas.png" 
+    styles="vertical-align:middle;">
+    <img id="lgo" class="pull-left"  src="jus.png"
+    styles="vertical-align:middle;">
+</a>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ 
+    <link rel="stylesheet" href="styles.css"> 
+ <title>Document</title> 
+  
+</style>
+</head> 
+ 
+<body> 
+ 
+       <header>  
+     
+  
+    <ul> 
+     
+  <li><a href="#" class="">الدعم الفني</a> 
+      <ul> 
+    <li><a href="دعم.html">الدعم الفني</a></li> 
+   </ul> 
+   <li><a href="#">السجل المهاري</a> 
+    <ul> 
+    <li><a href="السجل المهارييي.html">السجل المهاري</a></li> 
+   </ul> 
+     
+   </li>  
+    
+    
+    <li><a href="#">الأنديه الطلابية</a> 
+     <ul> 
+     <li><a href="index .html">الانديه الطلابية</a></li> 
+    </ul> 
+      
+    </li>  
+     
+    <li><a href="#"> مصادر التعلم</a> 
+     <ul> 
+      <li><a href="test-info.html"> مصادر التعلم</a> 
+     </ul> 
+    </li>  
+     
+    <li><a href="#"> الأحداث والفعاليات</a> 
+     <ul> 
+      <li><a href="iindex.html">الاحداث والفعاليات</a></li> 
+       
+     </ul> 
+    </li>  
+          <li><a href="#">اللوائح</a> 
+   
+    
+   <ul> 
+    <li><a href="nj.html">اللوائح</a></li> 
+   </ul> 
+   <li><a href="#">الوكالات</a> 
+    <ul> 
+      
+     <li><a href="لل.html">الوكالات</a></li> 
+      
+    </ul> 
+    <li><a href="#"> الرئيسية </a> 
+     <ul> 
+      <li><a href="fghjkml .html">الرئيسية</a></li> 
+      <li><a href="besic.html">الرؤية</a></li> 
+       
+    </ul></li>  
+</ul> 
+     
+    </ul> 
+ 
+    <h2><a href="#" class="logo"> عمادة شؤون الطلاب</a></h2> 
+    </header>
+  
+  
+  </body>
+  </html>
+  
+
+
+
+        <body>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h1>صفحة الاحداث والفعاليات  بجامعة جازان </h1>
+                          <p class="card-title">إكتشاف مواهب الطلاب وقدراتهم ومهارتهم وصقلها وتشجيعها عن طريق إشتراكهم فى أوجه الأنشطة المختلفة وتنميتها على مستوى الكلية والجامعة بما يحقق تعبير الطلاب المتميزين رياضياً عن أنفسهم وعن طاقاتهم الرياضية من خلال تنميتهم جسمياً وعقلياً وبث روح الفريق بينهم والإحساس بالمسئولية وحسن التقدير والرضا عن الذات فى نفس الوقت.
+                          </p><p class="card-para"></p>
+                        </div>
+                      </div>
+
+
+
+                </div>
+
+
+
+
+
+
+        
+
+
+      
+      
+
+
+
+
+
+      <div class="swiper-slide">
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="sa">
+            <div class="sa-content">منتدى جازان للإستثمار 2023
+              <p class="sa-title"> 
+                إدارة الأمن الجامعي - ضمن الاستعدادات لفعاليات منتدى جازان للاستثمار الذي تحتضنه جامعة جازان ، 
+                
+                قامت إدارة الأمن الجامعي في يوم المنتدى الأول بتوزيع عدد 50 فرد ومشرف من أفرادها وعدد 25 مركبة في كافة الطرق والمنافذ والفرز داخل المدينة الجامعية ،
+                
+                وذلك لاستقبال الضيوف والوفود المشاركة ضمن المنتدى وتوجيههم لمقر الحفل بفندق جراند ميلينيوم وكذا للمساعدة في عملية التفويج .
+              <p class="sa-title">
+              </p>
+
+              
+
+
+
+
+              </p>
+            </div>
+          </div>
+
+
+
+
+          
+
+
+          
+
+          <div class="sa">
+            <div class="sa-content">
+              <p class="sa-title"> 
+                الأمن الجامعي شريك البناء و النجاحات 
+
+إدارة الأمن الجامعي - نفذت وكالة الجامعة صباح الثلاثاء 21-11-2023م لقاء بعنوان: "الأمن الجامعي.. شريك البناء والنجاحات" 
+
+بهدف تطوير آليات العمل، وتعزيز الجودة في تنفيذ المهام، والتعريف بقصص النجاح لمنسوبي ومنسوبات إدارة الأمن الجامعي،
+
+وذلك بحضور وكيل الجامعة ‎#أحمد_أبوطالب على مسرح كلية الآداب والعلوم الإنسانية بالمدينة الجامعية ..
+
+
+
+
+              </p>
+              
+              
+              
+              
+              <p class="sa-para"></p>
+
+               
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="sa">
+            <div class="sa-content">
+              <p class="sa-title">تم تنفيذ العرض المسرحي باللغة العربية لمسرحية (هاملت)
+              </p><p class="sa-para">
+                </p>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
